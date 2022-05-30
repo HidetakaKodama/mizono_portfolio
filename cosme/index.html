@@ -31,13 +31,13 @@
 
             <nav class="header_nav_pc">
                 <ul class="header_ul" id="header_ul">
-                    <div class="nav_menu_wrap">
-                        <div class="humburger">
+                    <!-- <div class="nav_menu_wrap">
+                        <div class="humburger_open">
                         <span></span>
                         <span></span>
                         <span></span>
                         </div>
-                    </div>
+                    </div> -->
                     <li class="header_li"><a href="#">HOME</a></li>
                     <li class="header_li"><a href="#">PRODUCTS</a></li>
                     <li class="header_li"><a href="#">CATEGORY</a>
@@ -66,6 +66,39 @@
                     <li class="header_li_sns"><a href="#"><img src="./img/instagram-brands 1.png" width="23px"></a></li>
                 </ul>
             </nav>
+
+            <nav class="header_nav_sp">
+                    <div class="humburger_open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav id="g-nav">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PRODUCT</a></li>
+                            <li class="has-child"><a href="#">CATEGORY</a>
+                                <ul>
+                                    <li><a href="#">クリーム</a></li>
+                                    <li><a href="#">美容オイル</a></li>
+                                    <li><a href="#">ボディケア</a></li>
+                                    <li><a href="#">リップクリーム</a></li>
+                                    <li><a href="#">美容液</a></li>
+                                    <li><a href="#">オールインワン</a></li>
+                                    <li><a href="#">ヘアケア</a></li>
+                                    <li><a href="#">日焼け止め</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">NEWS</a></li>
+                            <li class="hum_sns">
+                                <a href="#"><img src="./img/twitter-brands 1.png" width="23px"></a>
+                                <a href="#"><img src="./img/instagram-brands 1.png" width="23px"></a>
+                            </li>
+                        </ul>
+                    </nav>
+            </nav>
+
         </header>
         </div>
 
@@ -252,7 +285,7 @@
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
      <script src="./script.js"></script>
      <script>
-         const img = ["img/main1.jpg","img/main2.jpg","img/main3.jpg","img/main4.jpg"];
+        const img = ["img/main1.jpg","img/main2.jpg","img/main3.jpg","img/main4.jpg"];
         let count = -1;
         picChange();
         function picChange(){

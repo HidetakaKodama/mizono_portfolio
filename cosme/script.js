@@ -104,3 +104,30 @@ $('#page_top').click(function(){
     },500);
     return false;
 });
+
+$(".humburger_open").click(function(){
+    $(this).toggleClass('active');
+    $("#g-nav").toggleClass('panelactive');
+});
+
+$("#g-nav").click(function(){
+    $(".humburger_open").removeClass('active');
+    $("#g-nav").removeClass('panelactive');
+});
+
+function mediaQueriesWin(){
+    var width = $(window).width();
+    if(width <= 768){
+        $(".has-child > a").on('click',function(){
+            var parentElem = $(this).parent();
+            $(parentElem).toggleClass('active');
+            $(parentElem).children('ul').stop().slideToggle(500);
+            return false;
+        });
+    }
+}
+
+
+$(window).on('load',function(){
+    mediaQueriesWin();
+});
